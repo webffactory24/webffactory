@@ -45,6 +45,23 @@
             width: 100%;
             position: relative;
         }
+        #scrollBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #042622;
+            color: white;
+            border: white;
+            border-radius: 50%;
+            padding: 15px;
+            font-size: 18px;
+            cursor: pointer;
+            z-index: 999;
+        }
+        #scrollBtn:hover {
+            background-color: #042622;
+        }
     </style>
 </head>
 <body>
@@ -79,12 +96,13 @@
         </p>
         <img src="img/MaquetaMarzo24.jpg" alt="Logo" width="398">  
         <br>
+        <button onclick="scrollToTop()" id="scrollBtn" title="Volver arriba">Subir</button>
     </main>
 
     <footer>
         <p>&copy; 2024 Florida Factory</p>
     </footer>
 
-    
+    <script src="btnSubir.js"></script>
 </body>
 </html>
