@@ -14,12 +14,16 @@
     </header>
 
     <nav>
-        <a href="Factory4.0.html">Inicio</a>
+        <a href="Factory4.0.html" id="inicio">Inicio</a>
         <a href="AcercaDeFF.html">Acerca de</a>
         <a href="IntegrantesFF.html">Integrantes</a>
         <a href="FototecaFF.html">Fototeca</a>
         <a href="DocumentosFF.html">Documentos</a>
         <a href="ScadaFF.html">Scada</a>
+        <select id="language" onchange="updateContent()">
+            <option value="en">English</option>
+            <option value="es">Español</option>
+        </select>
     </nav>
 
     <main>
@@ -47,5 +51,6 @@
     </footer>
 
     <script src="btnSubir.js"></script>
+    <script src="diccionario/idiomas.js"></script>
 </body>
 </html>
