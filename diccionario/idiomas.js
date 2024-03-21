@@ -1,17 +1,18 @@
-// Cargar el diccionario
 let dictionary;
 
-fetch('diccionario.json')
+// Cargar el diccionario
+fetch('diccionario/diccionario.json')
     .then(response => response.json())
     .then(data => {
         dictionary = data;
         updateContent();
-    });
+    })
+    .catch(error => console.error('Error al cargar el diccionario:', error));
 
 // Función para cambiar el contenido según el idioma
 function updateContent() {
     const lang = document.getElementById('language').value;
-    document.getElementById('inicio').textContent = dictionary.inicio[lang];
+    document.getElementById('titulo').textContent = dictionary.titulo[lang];
     document.getElementById('mensaje').textContent = dictionary.mensaje[lang];
-    // Actualiza otras partes de la página según sea necesario
+    // Puedes agregar más elementos que quieras traducir aquí
 }

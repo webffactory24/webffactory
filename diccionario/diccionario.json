@@ -6,5 +6,9 @@
     "mensaje": {
         "en": "This is a bilingual website.",
         "es": "Este es un sitio web bilingüe."
+    },
+    "welcome": {
+        "en": "Welcome",
+        "es": "Bienvenido"
     }
 }
