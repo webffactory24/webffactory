@@ -58,3 +58,11 @@ main {
 #scrollBtn:hover {
     background-color: #042622;
 }
+/* class="container" para dejar la tabla en el centro y con tamaño */
+.container {
+    width: 95%; 
+    margin: 0 auto; 
+}
+.table td{
+    border-top: none !important;
+}
