@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scada FF24</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="generalStyle.css">
+</head>
+<body>
+
+    <header>
+        <img src="img/Imagen1.png" alt="Logo" width="400">
+    </header>
+
+    <nav>
+        <a href="Factory4.0.html">Home</a> 
+        <a href="AcercaDeFF.html">About us</a>
+        <a href="IntegrantesFF.html">Team members</a>
+        <a href="FototecaFF.html">Photo Library</a>
+        <a href="DocumentosFF.html">Documents</a>
+        <a href="ScadaFF.html">Scada</a>
+    </nav>
+
+    <main>
+        <div class="row">
+            <div class="p-2" style="margin-left: auto !important; width: 200px;">
+                <button class="btn btn-success" type="button" onclick="activarVideos()">
+                    Activate videos
+                </button>
+            </div>
+            <div class="p-2" style="width: 200px; margin-right: auto !important;">
+                <button class="btn btn-danger" type="button" onclick="pausarVideos()">
+                    Pause videos
+                </button>
+            </div>
+        </div> 
+    </main>
+    <script>
+         function activarVideos(){
+             var video1 = document.getElementById('video1');
+             var video2 = document.getElementById('video2');
+
+             video1.play();
+             video2.play();
+         }
+
+         function pausarVideos(){
+             var video1 = document.getElementById('video1');
+           var video2 = document.getElementById('video2');
+
+             video1.pause();
+             video2.pause();
+        }
+    </script>
+    
+
+    <footer class="footer pt-8 pb-6 f6 color-fg-muted p-responsive">
+        <p>&copy; 2024 Florida Factory</p>
+    </footer>
+
+    <script src="scripts/btnSubir.js"></script>
+</body>
+</html>

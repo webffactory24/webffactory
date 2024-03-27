@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Team Members FF24</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="generalStyle.css">
+    <style>
+        button{
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="img/Imagen1.png" alt="Logo" width="400">
+    </header>
+
+    <nav>
+        <a href="Factory4.0.html">Home</a> 
+        <a href="AcercaDeFF.html">About us</a>
+        <a href="IntegrantesFF.html">Team members</a>
+        <a href="FototecaFF.html">Photo Library</a>
+        <a href="DocumentosFF.html">Documents</a>
+        <a href="ScadaFF.html">Scada</a>
+    </nav>
+
+    <main>
+        <div class="gallery">
+            <button onclick="RaulInfo()">
+                <img id="imgPeq" src="img/raul.jpg" alt="Raul">
+            </button>
+            <button onclick="RoberInfo()">
+                <img id="imgPeq" src="img/rober.jpg" alt="Rober">
+            </button>
+            <button onclick="DiegoInfo()">
+                <img id="imgPeq" src="img/diego.jpg" alt="Diego">
+            </button>
+            <button onclick="PauInfo()">
+                <img id="imgPeq" src="img/pau.jpg" alt="Pau">
+            </button>
+            <button onclick="DavidInfo()">
+                <img id="imgPeq" src="img/david.jpg" alt="David">
+            </button>
+            <button onclick="LlunaInfo()">
+                <img id="imgPeq" src="img/lluna.jpg" alt="Lluna">
+            </button>
+            <button onclick="JosueInfo()">
+                <img id="imgPeq" src="img/josue.jpg" alt="Josue">
+            </button>
+        </div>
+        <button onclick="scrollToTop()" id="scrollBtn" title="Volver arriba">Subir</button>
+        <br>
+        <img src="img/grupo.jpg" alt="grupo" style="width: 80%; padding-bottom: 20px;">
+
+        <div class="container" id="infoLluna">
+            <table class="table">
+                <tr class="row">
+                    <td class="col-md-3 col-sm-6">
+                        <img src="img/llunaT.jpg" alt="Lluna treballant" style="width: 100%">
+                    </td>
+                    <td class="col-md-9 col-sm-6">
+                        <table class="table">
+                            <tr class="row">
+                                <td class="col-md-3 col-sm-6"><img src="img/lluna.jpg" alt="Lluna" style="width: 65%"></td>
+                                <td class="col-md-9 col-sm-6" style="text-align: left;">
+                                    <h1>Lluna Vidal Campos</h1>
+                                    <h3>Web development manager of the project</h3>
+                                </td>
+                            </tr>
+                            <tr class="row">
+                                <td class="col-md-12" colspan="2">
+                                    <b>Work in progress -- Higher Degree in Industrial Automation and Robotics</b> <br>
+                                    Higher Degree in Multiplatform Application Development <br>
+                                    <b>Other</b><br>
+                                    Microsoft Office Specialist Word 2013 <br>
+                                    Microsoft Office Specialist Excel 2013 <br>
+                                    Microsoft Office Specialist Power Point 2016 <br>
+                                    Participant in First Lego League Valencia 2014
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="container" id="infoRaul">
+            <table class="table">
+                <tr class="row">
+                    <td class="col-md-3 col-sm-6">
+                        <img src="img/raulT.jpg" alt="Raul treballant" style="width: 100%">
+                    </td>
+                    <td class="col-md-9 col-sm-6">
+                        <table class="table">
+                            <tr class="row">
+                                <td class="col-md-3 col-sm-6"><img src="img/raul.jpg" alt="Raul" style="width: 65%"></td>
+                                <td class="col-md-9 col-sm-6" style="text-align: left;">
+                                    <h1>Raúl Marzo Perez</h1><br>
+                                    <h3>Project Coordinator</h3>
+                                </td>
+                            </tr>
+                            <tr class="row">
+                                <td class="col-md-12" colspan="2">
+                                    <b>Work in progress -- Higher Degree in Industrial Automation and Robotics</b> <br>
+                                    Photovoltaic Panel Installer Course <br>
+                                    Digital Change Agent Course <br>
+                                    <b>Other</b><br>
+                                    Intermediate Level in Forest Management and Environmental Conservation <br>
+                                    Intermediate Level in Physical and Sports Activities Driving in the Environment (TECAM) <br>
+                                    Advanced Level in Animation and Physical-Sports Activities (TAFAD)
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="container" id="infoDavid">
+            <table class="table">
+                <tr class="row">
+                    <td class="col-md-3 col-sm-6">
+                        <img src="img/davidT.jpg" alt="David treballant" style="width: 100%">
+                    </td>
+                    <td class="col-md-9 col-sm-6">
+                        <table class="table">
+                            <tr class="row">
+                                <td class="col-md-3 col-sm-6"><img src="img/david.jpg" alt="David" style="width: 65%"></td>
+                                <td class="col-md-9 col-sm-6" style="text-align: left;">
+                                    <h1>David Romero Parreño</h1>
+                                </td>
+                            </tr>
+                            <tr class="row">
+                                <td class="col-md-12" colspan="2">
+                                    <b>Work in progress -- Higher Degree in Industrial Automation and Robotics</b> <br>
+                                    Rearming Course <br>
+                                    Air Conditioning Maintenance and Start-up Course <br>
+                                    <b>Other</b><br>
+                                    Fluorinated Gases Course <br>
+                                    Intermediate Level in Ventilation and Extraction <br>
+                                    Advanced Level in Sports Technician <br>
+                                    9 years working at Ford
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="container" id="infoJosue">
+            <table class="table">
+                <tr class="row">
+                    <td class="col-md-3 col-sm-6">
+                        <img src="img/josueT.jpg" alt="Josue treballant" style="width: 100%">
+                    </td>
+                    <td class="col-md-9 col-sm-6">
+                        <table class="table">
+                            <tr class="row">
+                                <td class="col-md-3 col-sm-6"><img src="img/josue.jpg" alt="Josue" style="width: 65%"></td>
+                                <td class="col-md-9 col-sm-6" style="text-align: left;">
+                                    <h1>Josue Andres David Paredes Nuñez</h1>
+                                </td>
+                            </tr>
+                            <tr class="row">
+                                <td class="col-md-12" colspan="2">
+                                    <b>Work in progress -- Higher Degree in Industrial Automation and Robotics</b> <br>
+                                    Mechanical Engineering at the Catholic University of Santa María of Perú <br>
+                                    Specialization in Inventor Professional 2022 <br>
+                                    <b>Other</b><br>
+                                    Microsoft Office Specialist Excel <br>
+                                    Occupational Health and Safety Course
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="container" id="infoDiego">
+            <table class="table">
+                <tr class="row">
+                    <td class="col-md-3 col-sm-6">
+                        <img src="img/diegoT.jpg" alt="Diego treballant" style="width: 100%">
+                    </td>
+                    <td class="col-md-9 col-sm-6">
+                        <table class="table">
+                            <tr class="row">
+                                <td class="col-md-3 col-sm-6"><img src="img/diego.jpg" alt="Diego" style="width: 65%"></td>
+                                <td class="col-md-9 col-sm-6" style="text-align: left;">
+                                    <h1>Diego Gonzalez Gomez</h1>
+                                </td>
+                            </tr>
+                            <tr class="row">
+                                <td class="col-md-12" colspan="2">
+                                    <b>Work in progress -- Higher Degree in Industrial Automation and Robotics</b> <br>
+                                    Intermediate Level in Electromechanical Maintenance <br>
+                                    <b>Other</b><br>
+                                    Occupational Health and Safety Course
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="container" id="infoPau">
+            <table class="table">
+                <tr class="row">
+                    <td class="col-md-3 col-sm-6">
+                        <img src="img/pauT.jpg" alt="Pau treballant" style="width: 100%">
+                    </td>
+                    <td class="col-md-9 col-sm-6">
+                        <table class="table">
+                            <tr class="row">
+                                <td class="col-md-3 col-sm-6"><img src="img/pau.jpg" alt="Pau" style="width: 65%"></td>
+                                <td class="col-md-9 col-sm-6" style="text-align: left;">
+                                    <h1>Pau</h1>
+                                </td>
+                            </tr>
+                            <tr class="row">
+                                <td class="col-md-12" colspan="2">
+                                    <b>Work in progress -- Higher Degree in Industrial Automation and Robotics</b> <br>
+                                    Intermediate Level in Administrative Management <br>
+                                    Electrode and TIG Welding Course
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="container" id="infoRober">
+            <table class="table">
+                <tr class="row">
+                    <td class="col-md-3 col-sm-6">
+                        <img src="img/roberT.jpg" alt="Rober treballant" style="width: 100%">
+                    </td>
+                    <td class="col-md-9 col-sm-6">
+                        <table class="table">
+                            <tr class="row">
+                                <td class="col-md-3 col-sm-6"><img src="img/rober.jpg" alt="Rober" style="width: 65%"></td>
+                                <td class="col-md-9 col-sm-6" style="text-align: left;">
+                                    <h1>Roberto Marí Camarasa</h1><br>
+                                    <h3>Project Secretary</h3>
+                                </td>
+                            </tr>
+                            <tr class="row">
+                                <td class="col-md-12" colspan="2">
+                                    <b>Work in progress -- Higher Degree in Industrial Automation and Robotics</b> <br>
+                                    Advanced Level in Automated Assembly Line Maintenance <br>
+                                    <b>Other</b><br>
+                                    Forklift Training Course
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Florida Factory</p>
+    </footer>
+
+    <script src="scripts/btnSubir.js"></script>
+    <script src="scripts/integrantes.js"></script>
+</body>
+</html>
